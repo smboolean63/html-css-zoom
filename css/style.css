@@ -29,6 +29,9 @@ button {
 .btn.btn-color-green {
     color: #67d669;
 }
+.btn.btn-blue {
+    background-color: #3370e5;
+}
 
 /*-----------------
     COMMONS
@@ -45,4 +48,65 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 5px;
+    height: 40px;
+}
+
+/*-----------------
+    MAIN
+------------------*/
+main {
+    height: calc(100vh - 140px);
+    overflow-y: auto;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.person {
+    position: relative;
+    width: calc(100% / 6 - 10px);
+    /* height: 200px; */
+    margin: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.person::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+}
+.person-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://i.picsum.photos/id/417/536/354.jpg?hmac=Matsrj1iHedTOJ1uSvFWYRPrdtI6xSFcv9slnup-NQo');
+    background-size: cover;
+    background-position: center;
+}
+.person-name {
+    background-color: rgba(0,0,0,0.7);
+    padding: 4px 8px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    border-radius: 5px;
+}
+.person-actions {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+/*-----------------
+    FOOTER
+------------------*/
+footer {
+    height: 100px;
+    background-color: #67d669;
 }
