@@ -6,3 +6,43 @@
     margin: 0;
     padding: 0;
 }
+
+/*-----------------
+    BUTTONS
+------------------*/
+button {
+    border: none;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 6px;
+    background-color: #0a0b0b;
+    color: #fff;
+}
+.btn i {
+    font-size: 18px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.btn.btn-color-green {
+    color: #67d669;
+}
+
+/*-----------------
+    COMMONS
+------------------*/
+body {
+    background-color: #111111;
+    color: #fff;
+}
+
+/*-----------------
+    HEADER
+------------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
